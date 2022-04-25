@@ -3,51 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-    <title>Setitup - Template</title>
-   
-    <link rel="stylesheet" media="all" href="css/app.css">
-    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
-if (viewportmeta) {
-  if (screen.width < 375) {
-    var newScale = screen.width / 375;
-    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-  } else {
-    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-  }
-}</script>
+  <title>Setitup - Template</title>
+
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
   <style>
-
-    body{
-      max-width: 100vw;
+    .healer {
+      margin-top: 0vh;
     }
-  
-    .sofi{
-      width: 90vw;
-      margin-left: -440px;
-      margin-top: -88px;
-    }
-    .sofic{
-      width: 9vw;
-    }
-    .speed__wrap{
-      margin-bottom: 63vh
-    }
-    @media only screen and (max-width: 600px) {
-    .sofi{
-      width: 208vw;
-      margin-left: -370px;
-      margin-bottom: -240px;
-    }
-    .sofic{
-      display: none;
-    }
-
-    .speed__wrap{
-      margin-bottom: 2vh
-    }
-
-  }
-  
   </style>
 </head>
 
@@ -56,72 +30,15 @@ if (viewportmeta) {
     <div class="main">
       <div class="header js-header" id="header">
         <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-            class="header__logo" href="#"><img class="header__pic" src="img/logo.svg" alt=""></a>
+            class="header__logo" href="index.html"><img class="header__pic" src="img/logo.svg" alt=""></a>
           <div class="header__wrap js-header-wrap">
-            <nav class="header__nav"><a class="header__item" href="#">Features</a><a class="header__item"
-                href="#">Pricing</a><a class="header__item" href="#">Tours</a>
-              <div class="header__item js-header-item"><a class="header__head js-header-head" href="#">Explore<svg
-                    class="icon icon-arrow-down">
-                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                  </svg></a>
+            <nav class="header__nav"><a class="header__item" href="graphic.html">Graphics</a><a class="header__item"
+                href="development.html">Development</a><a class="header__item" href="management.html">Management</a><a
+                class="header__item" href="pricing.html">Pricing</a>
+              <div class="header__item js-header-item">
                 <div class="header__body js-header-body">
                   <div class="header__center center">
-                    <div class="header__row">
-                      <div class="header__col">
-                        <div class="header__category">Features</div>
-                        <div class="header__menu"><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/cup.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Collab Assistant</div>
-                              <div class="header__text">Smart automation system</div>
-                            </div>
-                          </a><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/camera.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Advanced Importer</div>
-                              <div class="header__text">Work with various media formats</div>
-                            </div>
-                          </a><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/calendar.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Product Management</div>
-                              <div class="header__text">Workspace reimagined</div>
-                            </div>
-                          </a></div>
-                      </div>
-                      <div class="header__col">
-                        <div class="header__category">Features</div>
-                        <div class="header__menu"><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/chatbox.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Support</div>
-                              <div class="header__text">24/7 Live Support</div>
-                            </div>
-                          </a><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/fill.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Color Picker</div>
-                              <div class="header__text">Advanced color picker</div>
-                            </div>
-                          </a></div>
-                      </div>
-                      <div class="header__col">
-                        <div class="header__category">Company</div>
-                        <div class="header__menu"><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/clock.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Collab Team</div>
-                              <div class="header__text">See who’s behind the magic</div>
-                            </div>
-                          </a><a class="header__box" href="#">
-                            <div class="header__preview"><img class="header__pic" src="img/bell-flat.png" alt=""></div>
-                            <div class="header__deetails">
-                              <div class="header__info">Collab Design</div>
-                              <div class="header__text">What we’re working on</div>
-                            </div>
-                          </a></div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -137,93 +54,40 @@ if (viewportmeta) {
         </div>
         <div class="header__bg js-header-bg"></div>
       </div>
-      <div class="main__circles">
-        <div class="main__circle"></div>
-        <div class="main__circle js-rellax" data-rellax-speed="2"></div>
-        <div class="main__circle js-rellax" data-rellax-speed="1"></div>
-        <div class="main__circle js-rellax" data-rellax-speed="2"></div>
-        <div class="main__circle js-rellax" data-rellax-speed=".3"></div>
-        <div class="main__circle"></div>
-        <div class="main__circle js-rellax" data-rellax-speed="1"></div>
-      </div>
-      <div class="speed">
-        <div class="speed__center center">
-          <div class="speed__wrap">
-            <div class="speed__head" data-aos="animation-scale-y">
-              <div class="speed__stage stage">Collab is fast, super fast.</div>
-              <h2 class="speed__title title">Speed up <br>your <br>workflow<span class="title__color">.</span></h2>
-              <div class="speed__text">Essentially no lag, no matter the size of the file, even on mobile devices.</div>
+      <div class="main__center center">
+        <div class="speed">
+          <div class="speed__center center">
+            <div class="speed__wrap">
+              <div class="speed__head" data-aos="animation-scale-y">
+                
+                <h2 class="speed__title title">Boost <br>your <br>productivity<span class="title__color">.</span></h2>
+                <div class="speed__text">We believe, our clients deserve to be remarkable in their business.</div>
+              </div>
+              <div class="speed__number" data-aos="animation-scale-y"><span>10</span>x</div>
             </div>
           </div>
-        </div>
-        <div class="speed__line"><img class="speed__pic" src="img/line.svg" alt=""></div>
-        <div class="speed__preview" data-aos>
-          <div class="speed__graphic"><img class="speed__pic sofi" src="https://cdn.discordapp.com/attachments/926794442751492147/964779657696280586/Graphic.png" alt=""></div>
-          <div class="speed__plant"><img class="speed__pic js-parallax sofic" data-scale="1.3" data-orientation="left"
-              src="https://cdn.discordapp.com/attachments/926794442751492147/964779657432010783/-_Cube.png" alt=""></div>
-        </div>
-        <div class="speed__circles">
-          <div class="speed__circle js-rellax" data-rellax-speed="-1"></div>
-          <div class="speed__circle js-rellax" data-rellax-speed="1"></div>
-          <div class="speed__circle"></div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="speez">
-        <div class="speez__center center">
-          <div class="speez__wrap">
-            <div class="speez__head" data-aos="animation-scale-y">
-              <div class="speez__stage stage">Collab is fast, super fast.</div>
-              <h2 class="speez__title title">speed up <br>your <br>workflow<span class="title__color">.</span></h2>
-              <div class="speez__text">Essentially no lag, no matter the size of the file, even on mobile devices.</div>
-            </div>
+          <div class="speed__line"><img class="speed__pic" src="img/line.svg" alt=""></div>
+          <div class="speed__preview" data-aos>
+            <div class="speed__graphic"><img class="speed__pic" src="img/graphic.png" alt=""></div>
+            <div class="speed__plant"><img class="speed__pic js-parallax" data-scale="1.3" data-orientation="left"
+                src="img/plant.png" alt=""></div>
+          </div>
+          <div class="speed__circles">
+            <div class="speed__circle js-rellax" data-rellax-speed="-1"></div>
+            <div class="speed__circle js-rellax" data-rellax-speed="1"></div>
+            <div class="speed__circle"></div>
           </div>
         </div>
-        <div class="speez__line"><img class="speez__pic" src="img/line.svg" alt=""></div>
-        <div class="speez__preview" data-aos>
-          <div class="speez__graphic"><img class="speez__pic" width="100px" onclick='window.open("webpage.htm", "_self");' src="https://cdn.discordapp.com/attachments/926794442751492147/964791954103758878/Plan_2.png" alt=""></div>
-          
+        <div class="main__circles">
+          <div class="main__circle"></div>
+          <div class="main__circle js-rellax" data-rellax-speed="2"></div>
+          <div class="main__circle js-rellax" data-rellax-speed="1"></div>
+          <div class="main__circle js-rellax" data-rellax-speed="2"></div>
+          <div class="main__circle js-rellax" data-rellax-speed=".3"></div>
+          <div class="main__circle"></div>
+          <div class="main__circle js-rellax" data-rellax-speed="1"></div>
         </div>
-        <div class="speez__circles">
-          <div class="speez__circle js-rellax" data-rellax-speed="-1"></div>
-          <div class="speez__circle js-rellax" data-rellax-speed="1"></div>
-          <div class="speez__circle"></div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="speez">
-        <div class="speez__center center">
-          <div class="speez__wrap">
-            <div class="speez__head" data-aos="animation-scale-y">
-              <div class="speez__stage stage">Collab is fast, super fast.</div>
-              <h2 class="speez__title title">speed up <br>your <br>workflow<span class="title__color">.</span></h2>
-              <div class="speez__text">Essentially no lag, no matter the size of the file, even on mobile devices.</div>
-            </div>
-          </div>
-        </div>
-        <div class="speez__line"><img class="speez__pic" src="img/line.svg" alt=""></div>
-        <div class="speez__preview" data-aos>
-          <div class="speez__graphic"><img class="speez__pic" width="100px" onclick='window.open("webpage.htm", "_self");' src="https://cdn.discordapp.com/attachments/926794442751492147/964791954103758878/Plan_2.png" alt=""></div>
-          
-        </div>
-        <div class="speez__circles">
-          <div class="speez__circle js-rellax" data-rellax-speed="-1"></div>
-          <div class="speez__circle js-rellax" data-rellax-speed="1"></div>
-          <div class="speez__circle"></div>
-        </div>
+
       </div>
     </div>
     <div class="features js-features">
@@ -360,11 +224,10 @@ if (viewportmeta) {
                   <div class="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                     <div class="package__category">
                       <div class="package__icon"><img class="package__pic" src="img/smile-2.svg" alt=""></div>
-                      <div class="package__text">Awesome feature</div>
+                      <div class="package__text">Moderation</div>
                     </div>
-                    <h3 class="package__title title title_sm">Ultimate features</h3>
-                    <div class="package__info">It’s easy to share designs across the organization, so team collaboration
-                      is fast and easy.</div>
+                    <h3 class="package__title title title_sm">Another Specialty</h3>
+                    <div class="package__info">We ensure the community is alway</div>
                     <div class="package__list"><a class="package__link" href="#">
                         <div class="package__icon"><img class="package__pic" src="img/layout-1.svg" alt=""></div>
                         <div class="package__text">Awesome website</div>
@@ -385,96 +248,9 @@ if (viewportmeta) {
                   <div class="package__preview"><img class="package__pic" src="img/laptop.png" alt=""></div>
                 </div>
               </div>
-              <div class="package__slide">
-                <div class="package__row">
-                  <div class="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
-                    <div class="package__category">
-                      <div class="package__icon"><img class="package__pic" src="img/smile-2.svg" alt=""></div>
-                      <div class="package__text">Awesome feature</div>
-                    </div>
-                    <h3 class="package__title title title_sm">Standard features</h3>
-                    <div class="package__info">It’s easy to share designs across the organization, so team collaboration
-                      is fast and easy.</div>
-                    <div class="package__list"><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-1.svg" alt=""></div>
-                        <div class="package__text">Awesome website</div>
-                      </a><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-3.svg" alt=""></div>
-                        <div class="package__text">Stunning interface</div>
-                      </a></div>
-                    <div class="package__btns">
-                      <div class="package__arrows"><button class="package__arrow js-package-prev"><svg
-                            class="icon icon-arrow-prev">
-                            <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-                          </svg></button><button class="package__arrow js-package-next"><svg
-                            class="icon icon-arrow-next">
-                            <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                          </svg></button></div><a class="package__btn btn btn_purple" href="login.html">Get Started</a>
-                    </div>
-                  </div>
-                  <div class="package__preview"><img class="package__pic" src="img/laptop.png" alt=""></div>
-                </div>
-              </div>
-              <div class="package__slide">
-                <div class="package__row">
-                  <div class="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
-                    <div class="package__category">
-                      <div class="package__icon"><img class="package__pic" src="img/smile-2.svg" alt=""></div>
-                      <div class="package__text">Awesome feature</div>
-                    </div>
-                    <h3 class="package__title title title_sm">Ultimate features</h3>
-                    <div class="package__info">It’s easy to share designs across the organization, so team collaboration
-                      is fast and easy.</div>
-                    <div class="package__list"><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-1.svg" alt=""></div>
-                        <div class="package__text">Awesome website</div>
-                      </a><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-3.svg" alt=""></div>
-                        <div class="package__text">Stunning interface</div>
-                      </a></div>
-                    <div class="package__btns">
-                      <div class="package__arrows"><button class="package__arrow js-package-prev"><svg
-                            class="icon icon-arrow-prev">
-                            <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-                          </svg></button><button class="package__arrow js-package-next"><svg
-                            class="icon icon-arrow-next">
-                            <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                          </svg></button></div><a class="package__btn btn btn_purple" href="login.html">Get Started</a>
-                    </div>
-                  </div>
-                  <div class="package__preview"><img class="package__pic" src="img/laptop.png" alt=""></div>
-                </div>
-              </div>
-              <div class="package__slide">
-                <div class="package__row">
-                  <div class="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
-                    <div class="package__category">
-                      <div class="package__icon"><img class="package__pic" src="img/smile-2.svg" alt=""></div>
-                      <div class="package__text">Awesome feature</div>
-                    </div>
-                    <h3 class="package__title title title_sm">Standard features</h3>
-                    <div class="package__info">It’s easy to share designs across the organization, so team collaboration
-                      is fast and easy.</div>
-                    <div class="package__list"><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-1.svg" alt=""></div>
-                        <div class="package__text">Awesome website</div>
-                      </a><a class="package__link" href="#">
-                        <div class="package__icon"><img class="package__pic" src="img/layout-3.svg" alt=""></div>
-                        <div class="package__text">Stunning interface</div>
-                      </a></div>
-                    <div class="package__btns">
-                      <div class="package__arrows"><button class="package__arrow js-package-prev"><svg
-                            class="icon icon-arrow-prev">
-                            <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-                          </svg></button><button class="package__arrow js-package-next"><svg
-                            class="icon icon-arrow-next">
-                            <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                          </svg></button></div><a class="package__btn btn btn_purple" href="login.html">Get Started</a>
-                    </div>
-                  </div>
-                  <div class="package__preview"><img class="package__pic" src="img/laptop.png" alt=""></div>
-                </div>
-              </div>
+
+
+
             </div>
             <div class="package__line"><img class="package__pic" src="img/line-1.svg" alt=""></div>
             <div class="package__circle" data-aos data-aos-duration="600"></div>
@@ -572,7 +348,7 @@ if (viewportmeta) {
         </div>
       </div>
     </div>
-   
+
     <div class="footer js-footer">
       <div class="footer__center center">
         <div class="footer__row">
@@ -614,8 +390,8 @@ if (viewportmeta) {
     </div>
     <div class="popup mfp-hide" id="popup-contact">
       <div class="popup__wrap">
-        <div class="popup__head"><a class="popup__logo" href="#"><img class="popup__pic" src="img/logo.svg" alt=""></a>
-        </div>
+        <div class="popup__head"><a class="popup__logo" href="index.html"><img class="popup__pic" src="img/logo.svg"
+              alt=""></a></div>
         <div class="popup__body">
           <div class="popup__title title">Get in touch<span class="title__color">.</span></div>
           <div class="popup__info">Enter your detail below</div>

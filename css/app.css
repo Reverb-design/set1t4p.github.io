@@ -3513,6 +3513,11 @@ padding: 190px 0 10px;
 
 .layouts__pic {
   width: 100%;
+  
+}
+
+.layouts__preview {
+  margin-bottom: 10%;
 }
 
 .layouts__view {
@@ -6556,8 +6561,25 @@ padding: 190px 0 10px;
 }
 
 .quality__pic {
-  width: 100%;
+  width: 80%;
 }
+
+.quality__picz {
+  width: 90%;
+  padding-left: 12%;
+}
+
+.quality__picx {
+  width: 150%;
+}
+
+.quality__picc {
+  width: 70 %;
+  margin-left: 35%;
+}
+
+
+
 
 .quality__body {
   display: -webkit-box;
@@ -7006,6 +7028,10 @@ padding: 190px 0 10px;
 .footer__logo {
   display: inline-block;
   font-size: 0;
+}
+
+.footer__pic {
+  width: 65%;
 }
 
 .footer__logo .footer__pic {
