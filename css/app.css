@@ -3010,6 +3010,22 @@ padding: 190px 0 10px;
   width: 100%;
 }
 
+.features__picx{
+  width: 84%;
+}
+
+.features__picz{
+  width: 85%;
+}
+
+.features__picv{
+  width: 75%;
+}
+
+.features__picb{
+  width: 87%;
+}
+
 .features__category {
   margin-bottom: 35px;
   font-family: 'DM Sans', sans-serif;
@@ -4550,7 +4566,13 @@ padding: 190px 0 10px;
 .speed {
   position: relative;
   margin-bottom: 302px;
-  margin-top: 63px;
+  margin-top: 180px;
+}
+
+.speedz {
+  position: relative;
+  margin-bottom: 302px;
+  margin-top: 72px;
 }
 
 .speed__head {
@@ -4593,6 +4615,10 @@ padding: 190px 0 10px;
 
 .speed__pic {
   width: 100%;
+}
+
+.speed__picx {
+  width: 40%;
 }
 
 .speed__line {
